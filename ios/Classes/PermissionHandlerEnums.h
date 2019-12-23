@@ -6,22 +6,19 @@
 //
 
 typedef NS_ENUM(int, PermissionGroup) {
-    PermissionGroupCalendar = 0,
-    PermissionGroupCamera,
-    PermissionGroupContacts,
+    PermissionGroupCamera = 0,
+    
     PermissionGroupLocation,
     PermissionGroupLocationAlways,
     PermissionGroupLocationWhenInUse,
-    PermissionGroupMediaLibrary,
-    PermissionGroupMicrophone,
+    
+    
     PermissionGroupPhone,
     PermissionGroupPhotos,
-    PermissionGroupReminders,
-    PermissionGroupSensors,
-    PermissionGroupSms,
-    PermissionGroupSpeech,
+    
+    
     PermissionGroupStorage,
-    PermissionGroupIgnoreBatteryOptimizations,
+    
     PermissionGroupNotification,
     PermissionGroupUnknown,
 };

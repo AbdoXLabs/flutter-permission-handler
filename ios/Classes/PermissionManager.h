@@ -10,15 +10,14 @@
 #import <UIKit/UIKit.h>
 
 #import "AudioVideoPermissionStrategy.h"
-#import "ContactPermissionStrategy.h"
-#import "EventPermissionStrategy.h"
+
+
 #import "LocationPermissionStrategy.h"
-#import "MediaLibraryPermissionStrategy.h"
+
 #import "PermissionStrategy.h"
 #import "PhonePermissionStrategy.h"
 #import "PhotoPermissionStrategy.h"
-#import "SensorPermissionStrategy.h"
-#import "SpeechPermissionStrategy.h"
+
 #import "StoragePermissionStrategy.h"
 #import "UnknownPermissionStrategy.h"
 #import "NotificationPermissionStrategy.h"

@@ -9,11 +9,7 @@
 @implementation EventPermissionStrategy
 
 - (PermissionStatus)checkPermissionStatus:(PermissionGroup)permission {
-    // if (permission == PermissionGroupCalendar) {
-    //     return [EventPermissionStrategy permissionStatus:EKEntityTypeEvent];
-    // } else if (permission == PermissionGroupReminders) {
-    //     return [EventPermissionStrategy permissionStatus:EKEntityTypeReminder];
-    // }
+    // add those missing lines 
     
     return PermissionStatusUnknown;
 }
@@ -32,14 +28,17 @@
     
     EKEntityType entityType;
     
-    if (permission == PermissionGroupCalendar) {
-        entityType = EKEntityTypeEvent;
-    } else if (permission == PermissionGroupReminders) {
-        entityType = EKEntityTypeReminder;
-    } else {
-        completionHandler(PermissionStatusUnknown);
+    // if (permission == PermissionGroupCalendar) {
+    //     entityType = EKEntityTypeEvent;
+    // } else if (permission == PermissionGroupReminders) {
+    //     entityType = EKEntityTypeReminder;
+    // } else {
+    //     completionHandler(PermissionStatusUnknown);
+    //     return;
+    // }
+
+    completionHandler(PermissionStatusUnknown);
         return;
-    }
     
     EKEventStore *eventStore = [[EKEventStore alloc] init];
     [eventStore requestAccessToEntityType:entityType completion:^(BOOL granted, NSError *error) {

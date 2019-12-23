@@ -9,11 +9,11 @@
 @implementation EventPermissionStrategy
 
 - (PermissionStatus)checkPermissionStatus:(PermissionGroup)permission {
-    if (permission == PermissionGroupCalendar) {
-        return [EventPermissionStrategy permissionStatus:EKEntityTypeEvent];
-    } else if (permission == PermissionGroupReminders) {
-        return [EventPermissionStrategy permissionStatus:EKEntityTypeReminder];
-    }
+    // if (permission == PermissionGroupCalendar) {
+    //     return [EventPermissionStrategy permissionStatus:EKEntityTypeEvent];
+    // } else if (permission == PermissionGroupReminders) {
+    //     return [EventPermissionStrategy permissionStatus:EKEntityTypeReminder];
+    // }
     
     return PermissionStatusUnknown;
 }

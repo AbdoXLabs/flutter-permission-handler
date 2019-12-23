@@ -113,60 +113,46 @@ class PermissionGroup {
   /// iOS: Photos
   static const PermissionGroup photos = PermissionGroup._(5);
 
+/// Android: Microphone
+/// iOS: Microphone
+static const PermissionGroup microphone = PermissionGroup._(6);
 
 
 
   /// Android: External Storage
   /// iOS: Access to folders like `Documents` or `Downloads`. Implicitly granted.
-  static const PermissionGroup storage = PermissionGroup._(6);
+  static const PermissionGroup storage = PermissionGroup._(7);
 
 
   /// Android: Notification
   /// iOS: Notification
-  static const PermissionGroup notification = PermissionGroup._(7);
+  static const PermissionGroup notification = PermissionGroup._(8);
 
   /// The unknown permission only used for return type, never requested
-  static const PermissionGroup unknown = PermissionGroup._(8);
+  static const PermissionGroup unknown = PermissionGroup._(9);
 
   static const List<PermissionGroup> values = <PermissionGroup>[
-    
-    
     camera,
-    
-    
     location,
     locationAlways,
     locationWhenInUse,
-    
-    
+    microphone,
     phone,
     photos,
-    
-    
     storage,
-    
-    
     notification,
     unknown,
   ];
 
   static const List<String> _names = <String>[
-    'calendar',
     'camera',
-    'contacts',
     'location',
     'locationAlways',
     'locationWhenInUse',
-    'mediaLibrary',
     'microphone',
     'phone',
     'photos',
-    'reminders',
-    'sensors',
-    'sms',
-    'speech',
     'storage',
-    'ignoreBatteryOptimizations',
     'notification',
     'unknown',
   ];
